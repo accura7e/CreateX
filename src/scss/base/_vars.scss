@@ -1,0 +1,22 @@
+:root {
+	--container-width: 1260px;
+	--container-padding: 15px;
+	--white-color: #fff;
+
+	--font-main: 'Ubuntu', sans-serif;;
+	--font-accent: 'Playfair Display', serif;
+
+	--page-bg: #fff;
+	--text-color: #1E212C;
+	--text-muted: #787A80;
+	--accent: #FF5A30;
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

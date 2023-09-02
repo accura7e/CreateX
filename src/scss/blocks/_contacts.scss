@@ -1,0 +1,21 @@
+.header__contacts {
+    display: flex;
+    gap: 36px;
+}
+.header__contacts-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+}
+.header__contacts-img {
+}
+.header__contacts-text {
+    color: var(--text-color);
+    p{
+    color: #424551;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    }
+}
