@@ -10,7 +10,7 @@ function heroSlider(){
 
         loop: true,
         speed: 1500,
-        parallax:true,
+        parallax: true,
         grabCursor: true,
         // If we need pagination
         pagination: {
