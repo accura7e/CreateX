@@ -1,0 +1,20 @@
+.card-small {
+    text-align: center;
+}
+.card-small__img {
+    img{
+        display: inline-block;
+    }
+
+    margin-bottom: 24px;
+}
+.card-small__title {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+}
+.card-small__text {
+    max-width: 285px;
+}

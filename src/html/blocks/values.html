@@ -1,0 +1,35 @@
+<section class="values">
+    <div class="container">
+        <div class="values__title">
+            <h2 class="title-h2">
+                Our core values
+            </h2>
+        </div>
+
+        <div class="values__text">
+            <p>Our mission is to set the highest standards for construction sphere.</p>
+        </div>
+
+        <div class="values__row">
+            @@include('./components/card-small.html', {
+                'img': '01',
+                'title': 'Quality',
+                'text': 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.',
+            })
+            <div class="values__devider"></div>
+            @@include('./components/card-small.html', {
+                'img': '02',
+                'title': 'Safety',
+                'text': 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.',
+            })
+            <div class="values__devider"></div>
+            @@include('./components/card-small.html', {
+                'img': '03',
+                'title': 'Comfort',
+                'text': 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.',
+            })
+        </div>
+
+        @@include('./components/values-form.html')
+    </div>
+</section>
