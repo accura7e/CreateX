@@ -14,7 +14,7 @@ function heroSlider(){
         grabCursor: true,
         autoplay: true,
         autoplay: {
-          delay: 2000
+          delay: 4000
         },
         // If we need pagination
         pagination: {
