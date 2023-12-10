@@ -12,6 +12,10 @@ function heroSlider(){
         speed: 1500,
         parallax: true,
         grabCursor: true,
+        autoplay: true,
+        autoplay: {
+          delay: 2000
+        },
         // If we need pagination
         pagination: {
           el: '.hero__slider-pagination',

@@ -9,6 +9,7 @@
 }
 .values-form__title {
     margin-bottom: 34px;
+    text-align: center;
 }
 .title-h3 {
 }
@@ -17,6 +18,7 @@
     column-gap: 24px;
 
     .button {
+        padding: 0 32px;
         line-height: 44px;
         align-self: flex-end;
         border: none;

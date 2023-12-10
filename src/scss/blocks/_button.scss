@@ -1,5 +1,6 @@
 
 .button {
+    display: inline-block;
     transition: background-color .3s, color .3s, border .3s;
     padding: 0 40px;
     line-height: 52px;
@@ -7,6 +8,8 @@
     color: var(--white);
     border: 1px solid var(--accent);
     border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
     &:hover{
         box-shadow: 0px 0px 13px 3px rgba(34, 60, 80, 0.2);
     }
@@ -20,4 +23,9 @@
     &:hover{
         box-shadow: 0px 0px 13px 3px rgba(34, 60, 80, 0.2);
     }
+}
+
+.button--transparent--accent{
+    background-color: transparent;
+    color: var(--accent);
 }

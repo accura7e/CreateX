@@ -1,0 +1,49 @@
+.projects {
+    padding: 120px 0;
+    overflow-x: hidden;
+}
+.container {
+}
+.projects__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.projects__row-cards{
+    margin-bottom: 80px;
+}
+.projects__title {
+    max-width: 705px;
+}
+.projects__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+.projects__buttons {
+    display: flex;
+    column-gap: 12px;
+}
+
+.projects__button{
+    transition: background-color .3s;
+    svg{
+        transition: fill .3s;
+        fill: #424551;
+    }
+    background-color: #edeef3;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    &:hover{
+        background-color: var(--accent);
+        svg{
+            fill: #fff;
+        }
+    }
+}
+
+
