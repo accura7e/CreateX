@@ -1,0 +1,64 @@
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials__top">
+            <div class="testimonials__top-title">
+                <h2 class="title-h2">
+                    Supported by 12+ partners
+                </h2>
+
+            </div>
+
+
+            <div class="testimonials__top-row">
+                @@loop('./components/testimonials-partner.html', './data/testimonials-partners.json')
+            </div>
+
+
+        </div>
+
+
+        <div class="testimonials__bottom">
+            <div class="testimonials__bottom-column">
+                <div class="testimonials__bottom-title">
+                    <h2 class="title-h2">What our clients are saying</h2>
+                </div>
+
+                <div class="testimonials__bottom-slider">
+                <div class="testimonials-swiper">
+
+                    <div class="swiper-wrapper">
+
+                      @@loop('./components/testimonials-slider.html', './data/testimonials-slider.json')
+      
+                    </div>
+
+                </div>
+                </div>
+
+
+
+                        <!-- Additional required wrapper -->
+
+                        
+
+                            <!-- Slides -->
+       
+                           
+         
+
+
+
+                    <div class="testimonials__bottom-btns">
+                        <button class="testimonials__bottom-btn testimonials__bottom-btn-prev"><img src="./img/icons/btns/arr-prev.svg"></button>
+                        <button class="testimonials__bottom-btn testimonials__bottom-btn-next"><img src="./img/icons/btns/arr-next.svg"></button>
+                    </div>
+
+            </div>
+
+            <div class="testimonials__bottom-img">
+                <img src="./img/testimonials/image.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
