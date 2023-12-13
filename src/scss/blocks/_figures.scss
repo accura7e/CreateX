@@ -1,0 +1,162 @@
+/* Import the Google Font 'Lato' */
+
+
+/* Container styles */
+.figures{
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+.figures__title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.figures__circles{
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+}
+
+.chart {
+
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.chart figcaption {
+    box-sizing: border-box;
+    padding-top: 45px;
+    width: 150px;
+    height: 150px;
+    border: 6px solid #f0f0f0;
+    border-radius: 100px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+
+
+
+
+.chart--orange {
+    .outer{
+        stroke: #F89828;
+    }
+
+    figcaption{
+        border: 6px solid rgba(248, 152, 40, .3);
+        
+    }
+}
+
+.figures__circle{
+    p{
+        color: var(--text-color);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+    }
+}
+
+.chart--red {
+    .outer{
+        stroke: #F52F6E;
+    }
+
+    figcaption{
+        border: 6px solid rgba(245, 47, 110, .3);
+
+    }
+}
+
+.chart--blue {
+    .outer{
+        stroke: #5A87FC;
+    }
+
+    figcaption{
+        border: 6px solid rgba(90, 135, 252, .3);
+
+    }
+}
+
+.chart--green {
+    .outer{
+        stroke: #03CEA4;
+        
+    }
+
+    figcaption{
+        border: 6px solid rgba(3, 206, 164, .3);
+
+    }
+}
+
+
+
+
+
+
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 6;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 135;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 194;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 160;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+}
+
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+
+/* END Keyframes for the initial animation */
