@@ -8,6 +8,11 @@
     }
 }
 .news-card__img {
+    height: 360px;
+    width: 705px;
+    img{
+        object-fit: cover;
+    }
 }
 .news-card__desc {
     padding: 24px;
@@ -80,5 +85,11 @@
 
     .news-card__title{
         margin-bottom: 8px;
+    }
+
+    .news-card__img {
+        width: 495px;
+        height: 156px;
+        
     }
 }
