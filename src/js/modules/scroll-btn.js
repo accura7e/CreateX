@@ -1,19 +1,24 @@
 function scrollBtn(){
     window.addEventListener('scroll', function(){
         let scrollDistance = window.scrollY;
-        scrollBtn = document.querySelector('.scroll-btn')
-        if(scrollDistance > 1000){
-            scrollBtn.classList.add('active')
-        } else if(scrollDistance < 1000){
-            scrollBtn.classList.remove('active')
-        }
-        scrollBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
+        if(document.querySelectorAll('.scroll-btn')){
 
-                behavior: 'smooth',
-            })  
+
+        const scrollButton = document.querySelectorAll('.scroll-btn').forEach((item) =>{
+            if(scrollDistance > 1000){
+                item.classList.add('active')
+            } else if(scrollDistance < 1000){
+                item.classList.remove('active')
+            }
+            item.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+    
+                    behavior: 'smooth',
+                })  
+            })
         })
+    }
     })
 }
 

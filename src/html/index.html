@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		@@include('blocks/header.html')
-		<main>
-			@@include('blocks/components/scroll-btn.html')
-			@@include('blocks/hero.html')
-			@@include('blocks/bureau.html')
-			@@include('blocks/values.html')
-			@@include('blocks/services.html')
-			@@include('blocks/projects.html')
-			@@include('blocks/testimonials.html')
-			@@include('blocks/figures.html')
-			@@include('blocks/news.html')
-			@@include('blocks/section-form.html')
-		</main>
-		@@include('blocks/footer.html')
-		<script src="./js/index.bundle.js"></script>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	@@include('blocks/header.html')
+	<main>
+		@@include('blocks/components/scroll-btn.html')
+		@@include('blocks/hero.html')
+		@@include('blocks/bureau.html')
+		@@include('blocks/values.html')
+		@@include('blocks/services.html')
+		@@include('blocks/projects.html', {
+		"title": "Browse our selected projects and learn more about our work"
+		})
+		@@include('blocks/partners.html', {
+			"classColor": "partners--gray",
+			"paddingBottom": "partners--padding-big"
+		})
+		@@include('blocks/testimonials.html')
+		@@include('blocks/figures.html')
+		@@include('blocks/news.html')
+		@@include('blocks/section-form.html')
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
+
 </html>

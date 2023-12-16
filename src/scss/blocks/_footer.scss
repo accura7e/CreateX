@@ -103,13 +103,22 @@
 	line-height: 150%; /* 24px */
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	margin-bottom: 13px;
 }
 .footer__bottom-item-list {
 	display: flex;
 	flex-direction: column;
 	row-gap: 4px;
 
-	opacity: .6;
+	li{
+
+		a{
+			opacity: .6;
+		}
+		span{
+			opacity: 1;
+		}
+	};
 
 	/* base/regular */
 	font-family: Ubuntu;
@@ -119,7 +128,8 @@
 	line-height: 160%; /* 25.6px */
 
 	span{
-		opacity: 1;
+		opacity: 1 !important;
+		margin-right: 4px;
 	}
 }
 .footer__copyright {

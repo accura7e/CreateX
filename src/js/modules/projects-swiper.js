@@ -12,7 +12,7 @@ function swiperProjects(){
         slidesPerView: 3,
         // If we need pagination
 
-      
+        loop: true,
         // Navigation arrows
         navigation: {
           nextEl: '.projects__button-next',

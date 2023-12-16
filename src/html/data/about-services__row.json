@@ -1,0 +1,26 @@
+[
+    {
+        "img": "-3",
+        "title": "Construction",
+        "text": "Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu, scelerisque nisi, nibh. Enim semper id sodales ultricies sed ut ut augue. Mattis habitant venenatis, gravida posuere massa ac interdum. Eget aliquam dignissim ut vestibulum. " ,
+        "link": "#"
+    },
+    {
+        "img": "-2",
+        "title": "Project Development",
+        "text": "Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget. " ,
+        "link": "#"
+    },
+    {
+        "img": "-1",
+        "title": "Interior Design",
+        "text": "Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida pretium, orci. Nunc sit sollicitudin id egestas mattis. Turpis viverra nec urna ultrices urna. " ,
+        "link": "interior-design.html"
+    },
+    {
+        "img": "",
+        "title": "Repairs",
+        "text": "Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida pretium, orci. Nunc sit sollicitudin id egestas mattis. Turpis viverra nec urna ultrices urna. " ,
+        "link": "#"
+    }
+]

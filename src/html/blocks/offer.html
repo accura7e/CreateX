@@ -1,0 +1,51 @@
+<section class="offer">
+    <div class="container">
+        <div class="offer__row">
+            <div class="offer__row-img">
+                <img src="./img/services-page/interior-design/offer/image.jpg" alt="">
+            </div>
+
+            <div class="offer__row-desc">
+                <div class="offer__row-title">
+                    <h2 class="title-h2">
+                        We offer
+                    </h2>
+                </div>
+
+
+                <div class="offer__row-tab">
+                    <p data-offer-tab="offer-tab-1" class="offer__row-subtitle">Interior design of apartments</p>
+
+                    <p id="offer-tab-1" class="offer__row-text">
+                        Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim
+                        purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
+                    </p>
+                </div>
+
+                <div class="offer__row-tab">
+                    <p data-offer-tab="offer-tab-2" class="offer__row-subtitle">Interior design of private houses</p>
+
+                    <p id="offer-tab-2" class="offer__row-text">
+                         Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis. Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim
+                         purus.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="offer__bottom">
+            <div class="offer__bottom-title">
+                <h2 class="title-h2">
+                    That’s how we do it
+                </h2>
+            </div>
+
+            <div class="offer__bottom-stages">
+                @@loop('./components/stage.html', './data/stage.json')
+            </div>
+        </div>
+    </div>
+</section>

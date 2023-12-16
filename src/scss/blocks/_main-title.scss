@@ -1,5 +1,5 @@
 .main-title{
-    color: var(--white);
+    color: var(--text-color);
 
     /* display/1 */
 
@@ -8,4 +8,8 @@
     font-weight: 700;
     line-height: 130%; /* 93.6px */
     letter-spacing: 1px;
+
+    &.main-page-title{
+        color: var(--white);
+    }
 }

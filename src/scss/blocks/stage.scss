@@ -1,0 +1,86 @@
+.stage {
+    position: relative;
+
+    &:hover{
+        .stage__counter {
+            &::before{
+                color: var(--accent);
+            }
+            
+            &::after{
+
+                opacity: 1;
+                
+                
+            }
+        
+        }
+    }
+
+}   
+
+.stage:not(:last-child) {
+    &::before{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 52px - 23px);
+        border: 1px dashed #D7DADD;
+        right: 0;
+        top: 30px;
+    }
+}  
+.stage__counter {
+    color: #D7DADD;
+    width: max-content;
+    /* h1 */
+    margin-bottom: 16px;
+    font-size: 46px;
+    position: relative;
+    font-weight: 700;
+    line-height: 130%; /* 59.8px */
+
+    &:before{
+        transition: color .3s;
+        counter-increment: stage-counter 1;
+        content: '0' counter(stage-counter);
+        z-index: 10;
+        position: relative;
+    }
+
+    &::after{
+        position: absolute;
+        transition: opacity .3s;
+        content: '';
+        background-image: url('./../img/services-page/interior-design/offer/bg-circles.svg');
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 116px;
+        height: 116px;
+        opacity: 0;
+    }
+
+}
+.stage__title {
+    color: var(--text-color);
+
+/* lead/bold */
+
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+}
+.stage__text {
+
+
+/* base/regular */
+
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}

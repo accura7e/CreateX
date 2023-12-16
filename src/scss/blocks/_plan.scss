@@ -1,0 +1,117 @@
+.plan {
+    border-radius: 4px;
+    border: 1px solid  #E5E8ED;
+    background: #FFF;
+    position: relative;
+    /* shadow/small */
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.plan__header-categories{
+    display: flex;
+}
+.plan__header {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 24px;
+
+}
+.plan__header-title {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+.plan__header-category {
+    width: 245px;
+    p{
+        color: var(--text-color);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%; /* 36px */
+    }
+
+    span{
+        display: block;
+        color: var(--text-muted);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%; /* 27px */
+    }
+
+}
+
+
+.plan__benefits {
+
+}
+.plan__benefit {
+    padding: 16px 0 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(odd){
+        background: var(--gray-200, #F4F5F6);
+    }
+}
+
+
+.plan__benefit-title {
+}
+.plan__benefit-advantages {
+    text-align: center;
+    display: flex;
+
+}
+.plan__benefit-advantage {
+
+    width: 245px;
+    img{
+        display: inline-block;
+    }
+}
+
+.plan__footer {
+    display: flex;
+    justify-content: space-between;
+    &::before{
+        content: '';
+
+    }
+}
+.plan__footer-btns {
+
+    padding: 32px 0;
+
+
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+        padding: 0 24px;
+
+
+
+font-size: 12px;
+
+font-weight: 700;
+line-height: 36px; /* 300% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+    }
+}
+.plan__footer-btn{
+    width: 245px;
+    text-align: center;
+}
+.button {
+}
+.button--transparent--accent {
+}
