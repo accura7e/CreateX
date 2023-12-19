@@ -1,0 +1,13 @@
+.header-work{
+    background-image: url('./../img/work/bg.png');
+
+    background-color: #F4F5F6 !important;
+    background-position: 100%; /* x y */
+    background-repeat:  no-repeat;
+    padding-top: 20px;
+    padding-bottom: 0;
+    .header__row{
+        margin-bottom: 80px;
+    }
+    padding-bottom: 180px !important;
+}

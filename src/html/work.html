@@ -11,37 +11,37 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		@@include('./blocks/pages/header-services.html', {
-			"class": "header-services--design",
-			"title": "INTERIOR DESIGN",
+		@@include('./blocks/pages/header-work.html', {
+			"class": "header-work",
+			"title": "OUR WORK",
 			"page": {
 				"page-1": "Homepage",
 				"slash-1": "/",
-				"page-2": "Services",
-				"slash-2": "/",
-				"page-3": "Interior Design",
-				"link-1": "services.html",
-				"link-2": "interior-design.html",
-				"gray-1": "",
-				"gray-2": "gray-link",
+				"page-2": "Work",
+				"slash-2": "",
+				"page-3": "",
+				"link-1": "work.html",
+				"link-2": "",
+				"gray-1": "gray-link",
+				"gray-2": ""
 			},
-			"text": "Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet."
+			"text": "Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry."
 			})
 		<main>
 			@@include('blocks/components/scroll-btn.html')
-			@@include('blocks/offer.html')
-			@@include('blocks/benefits.html')
-			@@include('blocks/projects.html', {
-				"title": "Related projects"
-			})
+			@@include('blocks/filter.html')
 
-			@@include('blocks/pricing.html')
+		
+
+            @@include('blocks/testimonials.html', {
+                "padding": "padding-top-testimonials"
+            })
+
 			@@include('blocks/partners.html', {
-
-				"classColor": "partners--gray",
-				"padding": "partners--padding-bottom-small",
-
-				"title": "Supported by 12+ partners"
+				"classColor": "",
+				"padding": "partners--padding-bottom-small partners--padding-top-big",
+                
+                "title": "Our clients"
 			})
 			@@include('blocks/section-form.html')
 		</main>

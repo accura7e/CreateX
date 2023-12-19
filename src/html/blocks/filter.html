@@ -1,0 +1,17 @@
+<section class="filter">
+    <div class="container">
+        <ul class="filter__items">
+            @@include('./components/filter-items/filter-item-1.html')
+            @@include('./components/filter-items/filter-item-2.html')
+            @@include('./components/filter-items/filter-item-3.html')
+            @@include('./components/filter-items/filter-item-4.html')
+            @@include('./components/filter-items/filter-item-5.html')
+        </ul>
+
+
+        <div class="filter__cards">
+            @@loop('./components/projects-cards/work-card.html', './data/filter-cards.json')
+
+        </div>
+    </div>
+</section>
