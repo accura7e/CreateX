@@ -52,5 +52,67 @@
         "img": "05",
         "title": "Brown and Gray Painted House",
         "text": "Private houses"
+    },
+    {
+        "filter": "construction",
+        "img": "02",
+        "title": "Cubes Building",
+        "text": "Business Centers"
+    },
+    {
+        "filter": "development",
+        "img": "04",
+        "title": "Modern Cottage",
+        "text": "Private houses"
+    },
+    {
+        "filter": "design",
+        "img": "06",
+        "title": "Luxury Beach House",
+        "text": "Private houses"
+    },
+    {
+        "filter": "design",
+        "img": "07",
+        "title": "Modern Double Bedroom",
+        "text": "Apartments & flats"
+    },
+    {
+        "filter": "development",
+        "img": "08",
+        "title": "Kids Bedroom With Decorations",
+        "text": "Apartments & flats"
+    },
+    {
+        "filter": "repairs",
+        "img": "09",
+        "title": "Scandinavian Style Interior",
+        "text": "Private houses"
+    },
+    {
+        "filter": "repairs",
+        "img": "05",
+        "title": "Brown and Gray Painted House",
+        "text": "Private houses"
+    },
+    {
+        "filter": "development",
+        "img": "03",
+        "title": "The Pencil Building",
+        "text": "Stores & Malls"
+    },
+    {
+        "filter": "construction",
+        "img": "01",
+        "title": "Red Finger Building",
+        "text": "Business Centers"
+    },
+    {
+        "filter": "development",
+        "img": "08",
+        "title": "Kids Bedroom With Decorations",
+        "text": "Apartments & flats"
     }
+    
+    
 ]

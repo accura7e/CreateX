@@ -6,6 +6,7 @@ import testimonialsSlider from './modules/testimonials-slider'
 import scrollBtn from './modules/scroll-btn'
 import offerAccordeon from './modules/offer-accordeon'
 import filterWork from './modules/filter-work'
+import filterLoadBtn from './modules/filter-load-more-btn'
 testimonialsSlider()
 heroSlider()
 playVideo()
@@ -13,3 +14,4 @@ swiperProjects()
 scrollBtn()
 offerAccordeon()
 filterWork()
+filterLoadBtn()
