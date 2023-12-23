@@ -11,10 +11,14 @@
 	--text-muted: #787A80;
 	--accent: #FF5A30;
 	--white: #fff;
-    --laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
+
+
 }
+
+$laptopSize: 1199px;
+$tabletSize: 959px;
+$mobileSize: 599px;
+
 
 .dark {
     --page-bg: #252526;

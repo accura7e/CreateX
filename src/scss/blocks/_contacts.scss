@@ -1,6 +1,10 @@
 .header__contacts {
     display: flex;
     gap: 36px;
+
+    @include mediaWidth($laptopSize){
+        display: none;
+    }
 }
 .header__contacts-item {
     display: grid;

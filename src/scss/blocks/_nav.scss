@@ -7,7 +7,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 160%; /* 25.6px */
-
+    @include mediaWidth($laptopSize){
+        display: none;
+    }
     .active{
         color: var(--accent);
     }
