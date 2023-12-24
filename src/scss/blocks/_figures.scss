@@ -5,15 +5,43 @@
 .figures{
     padding-top: 180px;
     padding-bottom: 180px;
+    
+
+    @include mediaWidth($laptopSize){
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    @include mediaWidth($tabletSize){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include mediaWidth($mobileSize){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
 }
 .figures__title{
     text-align: center;
     margin-bottom: 60px;
+
+    @include mediaWidth($laptopSize){
+        margin-bottom: 40px;
+    }
 }
 .figures__circles{
     display: flex;
     justify-content: center;
     column-gap: 48px;
+
+    @include mediaWidth($laptopSize){
+        row-gap: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .chart {

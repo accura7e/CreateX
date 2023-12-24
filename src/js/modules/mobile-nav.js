@@ -19,7 +19,7 @@ function mobileNav() {
 			nav.forEach(el => {
 				el.classList.toggle('mobile-nav--open');
 			})
-			document.body.classList.toggle('no-scroll');
+	
 		}
 	})
 	

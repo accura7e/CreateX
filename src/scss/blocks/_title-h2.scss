@@ -3,4 +3,20 @@
     font-size: 46px;
     font-weight: 700;
     line-height: 130%; /* 59.8px */
-}
+
+    @include mediaWidth($laptopSize){
+        font-size: 40px;
+    }
+
+    @include mediaWidth($tabletSize){
+        font-size: 36px;
+    }
+
+    @include mediaWidth($mobileSize){
+        font-size: 30px;
+    }
+
+    @include mediaWidth($mobileXSSize){
+        font-size: 24px;
+    }
+}    

@@ -9,7 +9,7 @@ function swiperProjects(){
         // Optional parameters
     
 
-        slidesPerView: 3,
+
         // If we need pagination
 
         loop: true,
@@ -21,15 +21,14 @@ function swiperProjects(){
       
         
         breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-            425: {
-              slidesPerView: 2,
+            450: {
               spaceBetween: 20,
+              slidesPerView: 1,
             },
-            768: {
+            600: {
+              slidesPerView: 2,
+            },
+            900: {
                 slidesPerView: 3,
                 spaceBetween: 30,
             },

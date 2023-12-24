@@ -1,16 +1,66 @@
 .bureau {
     padding-top: 120px;
     padding-bottom: 180px;
+
+    @include mediaWidth($laptopSize){
+        padding-top: 100px;
+        padding-bottom: 160px;
+    }
+    
+    @include mediaWidth($tabletSize){
+        padding-top: 80px;
+        padding-bottom: 140px;
+    }
+    
+    @include mediaWidth($mobileSize){
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    
+    @include mediaWidth($mobileXSSize){
+        @include mediaWidth($mobileSize){
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+    }
 }
 
 .bureau__title {
     margin-bottom: 24px;
     text-align: center;
+
+    
+    @include mediaWidth($mobileSize){
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
 }
 
 .bureau__text {
     text-align: center;
     margin-bottom: 60px;
+
+
+    
+    /* large/regular */
+
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+
+
+
+
+    @include mediaWidth($mobileSize){
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    @include mediaWidth($mobileXSSize){
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
 }
 .bureau__video-wrapper {
     position: relative;
@@ -33,7 +83,10 @@
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
-    
+    @include mediaWidth($mobileSize){
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .bureau__video-play{
@@ -45,7 +98,12 @@
     width: 40px;
     height: 40px;
     bottom: 35px;
-
+    @include mediaWidth($mobileSize){
+        width: 30px;
+        height: 30px;
+        left: 22px;
+        bottom: 25px;
+    }
 }
 
 .hidden-btn{

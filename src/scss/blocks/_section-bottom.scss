@@ -3,4 +3,10 @@
     justify-content: center;
     column-gap: 40px;
     display: flex;
+
+    @include mediaWidth($tabletSize){
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+    }
 }

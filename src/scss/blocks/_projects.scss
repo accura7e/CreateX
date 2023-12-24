@@ -1,6 +1,17 @@
 .projects {
     padding: 120px 0;
     overflow-x: hidden;
+
+    @include mediaWidth($laptopSize){
+        padding: 80px 0;
+    }
+
+    @include mediaWidth($tabletSize){
+        padding: 60px 0;
+    }
+
+
+
 }
 .container {
 }
@@ -9,15 +20,43 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 60px;
+
+
+    @include mediaWidth($tabletSize){
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+
 }
 
 .swiper-projects{
     margin-bottom: 80px;
+
+    @include mediaWidth($laptopSize){
+        margin-bottom: 60px;
+    }
+
+
 }
 
 .projects__row-cards{
     overflow-x: hidden;
     margin-bottom: 80px;
+
+    @include mediaWidth($tabletSize){
+        margin-bottom: 40px;
+    }
+
+    @include mediaWidth($mobileSize){
+        margin-bottom: 30px;
+    }
+
+    @include mediaWidth($mobileXSSize){
+        margin-bottom: 20px;
+    }
 }
 .projects__title {
     max-width: 705px;

@@ -3,4 +3,18 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 150%;
+
+
+
+    @include mediaWidth($tabletSize){
+        font-size: 26px;
+    }
+
+    @include mediaWidth($mobileSize){
+        font-size: 24px;
+    }
+
+    @include mediaWidth($mobileXSSize){
+        font-size: 20px;
+    }
 }

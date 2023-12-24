@@ -26,6 +26,8 @@ function heroSlider(){
           },
         },
 
+
+
         // 
         
         
@@ -35,6 +37,7 @@ function heroSlider(){
           nextEl: '.hero__slider-btn-next',
           prevEl: '.hero__slider-btn-prev',
         },
+
       
         // And if we need scrollbar
 

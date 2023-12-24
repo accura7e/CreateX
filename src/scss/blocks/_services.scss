@@ -4,6 +4,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include mediaWidth($laptopSize){
+        padding-top: 100px;
+        padding-bottom: 80px
+}
+
+@include mediaWidth($tabletSize){
+    padding-top: 80px;
+    padding-bottom: 60px
+}
+
+@include mediaWidth($mobileSize){
+    padding-top: 60px;
+}
+
+@include mediaWidth($mobileXSSize){
+    padding-top: 30px;
+}
 }
 
 .services__title {
@@ -12,10 +30,21 @@
 }
 
 .services__row{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 10px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 80px;
+
+    @include mediaWidth($laptopSize){
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    @include mediaWidth($mobileXSSize){
+
+        grid-template-columns: repeat(1, auto);
+    }
 }
 
 .services__text{

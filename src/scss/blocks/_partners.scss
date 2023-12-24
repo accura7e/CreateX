@@ -1,16 +1,47 @@
 .partners {
     padding-top: 80px;
+    @include mediaWidth($laptopSize){
+        padding-top: 60px;
+    }
 
+    @include mediaWidth($mobileSize){
+        padding-top: 30px;
+
+    }
 }
 .partners--padding-top-small{
     
 }
 .partners--padding-top-big{
     padding-top: 180px;
+
+    @include mediaWidth($laptopSize){
+        padding-top: 120px;
+    }
+
+    @include mediaWidth($mobileSize){
+        padding-top: 80px;
+
+    }
 }
 
 .partners--padding-bottom-big{
     padding-bottom: 152px;
+
+    @include mediaWidth($laptopSize){
+        padding-bottom: 120px;
+    }
+
+    @include mediaWidth($mobileSize){
+        padding-bottom: 60px;
+
+    }
+
+    
+    @include mediaWidth($mobileSize){
+ 
+
+    }
 }
 
 .partners--padding-bottom-small{
@@ -28,6 +59,17 @@
 .title-h2 {
 }
 .partners__row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+
+    @include mediaWidth($laptopSize){
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+    @include mediaWidth($mobileSize){
+        grid-template-columns: repeat(2, 1fr);
+
+    }
 }

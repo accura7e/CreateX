@@ -2,6 +2,22 @@
 
     padding-bottom: 120px;
     background-color: #f4f5f6;
+    
+    @include mediaWidth($laptopSize){
+        padding-bottom: 100px;
+    }
+
+    @include mediaWidth($tabletSize){
+        padding-bottom: 80px;
+    }
+
+    @include mediaWidth($mobileSize){
+        padding-bottom: 60px;
+    }
+
+    @include mediaWidth($mobileSize){
+        padding-bottom: 40px;
+    }
 }
 .padding-top-testimonials{
     padding-top: 80px;
@@ -13,6 +29,8 @@
 .testimonials__top-title {
     text-align: center;
     margin-bottom: 32px;
+
+
 }
 
 .testimonials__top-row {
@@ -23,13 +41,27 @@
 
     display: flex;
     justify-content: space-between;
+
+    @include mediaWidth($laptopSize){
+        flex-direction: column;
+    }
 }
 .testimonials__bottom-column {
     position: relative;
     overflow: hidden;
+
+    @include mediaWidth($laptopSize){
+        flex-direction: column;
+    }
+    
 }
 .testimonials__bottom-title {
     margin-bottom: 60px;
+
+    @include mediaWidth($laptopSize){
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -41,6 +73,12 @@
     right: 0;
     bottom: 0;
     z-index: 100;
+
+    @include mediaWidth($laptopSize){
+        position: static;
+        margin: 0 auto;
+        width: max-content;
+    }
 }
 .testimonials__bottom-btn {
 }
@@ -56,10 +94,22 @@
         right: 0;
         position: absolute;
     }
+
+    @include mediaWidth($laptopSize){
+        display: none;
+    }
+
+
 }
 
 .testimonials-swiper{
     max-width: 600px;
+
+    @include mediaWidth($laptopSize){
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+    }
 }
 
 
@@ -67,17 +117,27 @@
 }
 .testimonials-slide__img {
     margin-bottom: 24px;
+
+    @include mediaWidth($laptopSize){
+        display: inline-block;
+    }
 }
 .testimonials-slide__text {
     color: #424551;
 
-/* base/regular */
-font-family: Ubuntu;
-font-size: 16px;
+    /* base/regular */
+    font-family: Ubuntu;
+    font-size: 16px;
 
-font-weight: 400;
-line-height: 160%; /* 25.6px */
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
     margin-bottom: 24px;
+
+    @include mediaWidth($tabletSize){
+        font-size: 14px;
+    }
+
+
 }
 .testimonials-slide__info {
     display: flex;
@@ -93,5 +153,9 @@ line-height: 160%; /* 25.6px */
     font-weight: 700;
     line-height: 160%; /* 25.6px */
 }
-.testimonials-slide__work {
+.testimonials__bottom-slider {
+
+    @include mediaWidth($laptopSize){
+        margin-bottom: 20px;
+    }
 }
