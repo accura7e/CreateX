@@ -7,6 +7,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0;
+    
+
+    @include mediaWidth($tabletSize){
+        padding: 60px 0;
+    }
+    @include mediaWidth($mobileSize){
+        padding: 30px 0 ;
+    }
+
 
 }
 
@@ -27,6 +36,18 @@
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.10), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
 
     padding: 48px 40px;
+
+
+    @include mediaWidth($tabletSize){
+        padding: 38px 30px;
+    }
+    @include mediaWidth($mobileSize){
+        padding: 25px 20px;
+    }
+
+    @include mediaWidth($mobileXSSize){
+        padding: 15px 15px;
+    }
 }
 
 .section__form-title {
@@ -118,6 +139,7 @@
     height: 17px;
     border-radius: 4px;
     border: 1px solid #D7DADD;
+    flex-shrink: 0;
     &::before{
         content: '';
         position: absolute;

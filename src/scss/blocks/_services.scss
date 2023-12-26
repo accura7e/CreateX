@@ -35,7 +35,7 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 80px;
 
-    @include mediaWidth($laptopSize){
+    @include mediaWidth(1300px){
         justify-content: center;
         justify-items: center;
         grid-template-columns: repeat(2, auto);
