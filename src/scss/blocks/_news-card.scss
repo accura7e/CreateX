@@ -1,6 +1,6 @@
 .news-card {
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
-
+    max-width: 705px;
     &:hover{
         .news-card__title{
             color: var(--accent);
@@ -8,15 +8,26 @@
     }
 }
 .news-card__img {
-    height: 360px;
-    width: 705px;
+
+   
+    overflow: hidden;
+
+
+    max-height: 360px;
+
     img{
+        width: 100%;
         object-fit: cover;
+
+        height: 360px;
     }
 }
 .news-card__desc {
     padding: 24px;
-
+    
+    @include mediaWidth($mobileXSSize){
+        padding: 6px;
+    }
 }
 .news-card__title {
     transition: color .3s;
@@ -25,6 +36,11 @@
     font-weight: 700;
     line-height: 150%; /* 30px */
     margin-bottom: 12px;
+
+    
+    @include mediaWidth($mobileXSSize){
+        text-align: center;
+    }
 }
 .news-card__date {
     display: flex;
@@ -40,11 +56,23 @@
 
     font-weight: 400;
     line-height: 150%; /* 21px */
+    @include mediaWidth($laptopSize){
+        margin-bottom: 0;
+    }
+    @include mediaWidth($mobileXSSize){
+        flex-direction: column;
+        row-gap: 4px;
+
+    }
 }
 .news__devider {
     width: 1px;
     height: 12px;
     background: #787A80;
+    
+    @include mediaWidth($mobileXSSize){
+        display: none;
+    }
 }
 .news-card__text {
     color: #424551;
@@ -55,6 +83,13 @@
 
     font-weight: 400;
     line-height: 160%; /* 25.6px */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @include mediaWidth($laptopSize){
+        display: none;
+    }
 }
 
 .news-card__message{
@@ -78,21 +113,45 @@
     flex-direction: column;
     row-gap: 30px;
     flex-shrink: 0;
-
+    .news-card{
+        max-width: 495px;
+        @include mediaWidth($laptopSize){
+            max-width: 705px;
+        }
+    }
     .news-card__desc{
         padding-top: 16px;
 
 
+        @include mediaWidth($laptopSize){
+            padding: 24px;
+        }
+
+        @include mediaWidth($mobileXSSize){
+            padding: 6px;
+        }
         
     }
 
     .news-card__title{
         margin-bottom: 8px;
+
+
+        @include mediaWidth($laptopSize){
+            margin-bottom: 12px;
+        }
+
     }
 
     .news-card__img {
-        width: 495px;
-        height: 156px;
         
+        max-height: 156px;
+        @include mediaWidth($laptopSize){
+            max-height: 360px;
+
+            img{
+                height: 360px;
+            }
+        }
     }
 }

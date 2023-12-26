@@ -33,4 +33,11 @@
     justify-content: center;
     column-gap: 30px;
     margin-bottom: 80px;
+
+
+    @include mediaWidth($laptopSize){
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
 }
