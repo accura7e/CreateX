@@ -9,21 +9,55 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 49px;
+
+	@include mediaWidth($laptopSize){
+		flex-direction: column;
+		text-align: center;
+    }
+
+    // @include mediaWidth($tabletSize){
+    //     font-size: 56px;
+    // }
+
+    // @include mediaWidth($mobileSize){
+    //     font-size: 50px;
+    // }
+
+    // @include mediaWidth($mobileXSSize){
+    //     font-size: 30px;
+    // }
 }
 .footer__desc {
 	display: flex;
 	flex-direction: column;
 	row-gap: 24px;
+
+	@include mediaWidth($laptopSize){
+		align-items: center;
+		margin-bottom: 20px;
+    }
+
 }
 .footer__desc-top {
 	display: flex;
 	column-gap: 60px;
+
+	@include mediaWidth($mobileXSSize){
+		align-items: center;
+		row-gap: 10px;
+		flex-direction: column;
+    }
 }
 .footer__desc-logo {
 }
 .footer__desc-socials {
 	column-gap: 16px;
 	display: flex;
+
+
+	@include mediaWidth($mobileXSSize){
+		column-gap: 8px;
+    }
 }
 .footer__desc-text {
 
@@ -34,6 +68,7 @@
 
 	font-weight: 400;
 	line-height: 150%; /* 21px */
+
 }
 
 .footer-form__title {
@@ -50,6 +85,17 @@
 	display: flex;
 	width: 100%;
 	margin-bottom: 16px;
+
+	@include mediaWidth($laptopSize){
+
+		justify-content: center;
+    }
+
+
+	@include mediaWidth($mobileXSSize){
+
+		flex-direction: column;
+    }
 }
 .footer-form__input {
 	flex-grow: 1;
@@ -58,8 +104,15 @@
 	border: 1px solid rgba(255, 255, 255, 0.20);
 	background: rgba(255, 255, 255, 0.12);
 	height: 44px;
+	flex-grow: 0;
 
 
+}
+
+.footer-form{
+	@include mediaWidth($laptopSize){
+		text-align: center;
+	}
 }
 .footer-form__button {
 		padding: 0px 32px;
@@ -81,6 +134,12 @@
 	font-weight: 400;
 	line-height: 150%; /* 18px */
 	opacity: 0.6;
+
+
+	
+	@include mediaWidth($laptopSize){
+		margin: 0 auto;
+	}
 }
 
 
@@ -89,9 +148,19 @@
 	display: flex;
 	column-gap: 125px;
 	margin-bottom: 60px;
+
+
+	@include mediaWidth($mobileSize){
+		column-gap: 20px;
+	}
+
+	@include mediaWidth($mobileXSSize){
+		flex-direction: column;
+		text-align: center;
+		row-gap: 20px;
+	}
 }
-.footer__bottom-item {
-}
+
 .footer__bottom-item-title {
 	color: #FFF;
 
@@ -136,4 +205,13 @@
 	display: flex;
 	align-items: center;
 	column-gap: 4px;
+
+
+	@include mediaWidth($mobileXSSize){
+		display: inline;
+
+		*{
+			display: inline;
+		}
+	}
 }
