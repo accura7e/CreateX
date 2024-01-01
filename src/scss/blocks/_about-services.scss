@@ -6,23 +6,73 @@
         .about-services__row-img {
             order: 1;
         }
+
+
     }
+
+    @include mediaWidth($tabletSize){
+        &:nth-child(even){
+            .about-services__row-img {
+                order: unset;
+            }
+    
+    
+        }
+    }
+
+
+    @include mediaWidth($laptopSize){
+        column-gap: 60px;
+    }
+    
+    @include mediaWidth($tabletSize){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+
 }
 
 
 
 .about-services__row-img {
-    flex-shrink: 0;
-    max-width: 575px;
-    max-height: 420px;
+
+    width: 575px;
+   height: 420px;
+    overflow: hidden;
+    flex-shrink: 1;
     img{
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
+
+    @include mediaWidth($tabletSize){
+        width: 100%;
+        max-width: 575px;
+        margin-bottom: 30px;
+        height: 300px;
+    }
+
+    
+
+
 }
 .about-services__row-desc {
+    max-width: 575px;
+    flex-shrink: 2;
 }
 .about-services__row-title {
     margin-bottom: 24px;
+
+
+    @include mediaWidth($mobileSize){
+        margin-bottom: 10px;
+    }
+    
 }
 .title-h2 {
 }
@@ -38,6 +88,11 @@
 
     font-weight: 400;
     line-height: 160%; /* 25.6px */
+
+    
+    @include mediaWidth($mobileSize){
+        margin-bottom: 20px;
+    }
 }
 .button {
 }
@@ -48,10 +103,36 @@
 .about-services {
     padding-top: 120px;
     padding-bottom: 180px;
+
+
+    @include mediaWidth($laptopSize){
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+    
+    @include mediaWidth($tabletSize){
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    
+    @include mediaWidth($mobileSize){
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    
+    @include mediaWidth($mobileXSSize){
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
 }
 
 .about-services__wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 120px;
+
+    @include mediaWidth($tabletSize){
+        row-gap: 60px;
+
+    }
 }
