@@ -80,9 +80,17 @@
     font-weight: 700;
     line-height: 150%; /* 30px */
     margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .project-card__text {
     font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .hidden-project-btn{
     position: absolute;

@@ -9,5 +9,7 @@
 		align-items: center;
 	}
 
-	
+	@include mediaWidth($laptopSize){
+		background-image: none !important;
+	}
 }

@@ -17,6 +17,11 @@
         }
     }
 
+
+    @include mediaWidth($laptopSize){
+        text-align: center;
+    }
+
 }   
 
 .stage:not(:last-child) {
@@ -28,6 +33,13 @@
         border: 1px dashed #D7DADD;
         right: 0;
         top: 30px;
+    }
+
+    @include mediaWidth($laptopSize){
+        &::before{
+            content: '';
+            display: none;
+        }
     }
 }  
 .stage__counter {
@@ -61,6 +73,11 @@
         width: 116px;
         height: 116px;
         opacity: 0;
+    }
+
+    @include mediaWidth($laptopSize){
+        margin-bottom: 0;
+        margin: 0 auto;
     }
 
 }

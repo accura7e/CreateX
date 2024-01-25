@@ -2,6 +2,14 @@
 
     background-image: url('./../img/services-page/bg/image.png');
     padding-bottom: 179px !important; 
+
+    @include mediaWidth($laptopSize){
+		padding-bottom: 120px !important;
+	}
+
+    @include mediaWidth($tabletSize){
+		padding-bottom: 80px !important;
+	}
 }
 
 .header-services--design{

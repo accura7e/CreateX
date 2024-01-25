@@ -51,5 +51,28 @@
 
 
 }
+
+
 .benefits__devider {
+    width: 1px;
+    flex-shrink: 0;
+    height: 188px;
+    opacity: 0.4;
+    background: -webkit-linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+}
+
+@include mediaWidth($laptopSize){
+
+}
+
+@include mediaWidth($tabletSize){
+
+}
+
+@include mediaWidth($mobileSize){
+
+}
+
+@include mediaWidth($mobileXSSize){
+
 }
